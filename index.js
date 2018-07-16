@@ -11,7 +11,7 @@ class RNEventSource {
     this.eventSource.addEventListener(type, listener)
 
     const remove = () => {
-      this.removeListener(type, listener);
+      this.removeEventListener(type, listener);
     }
 
     this.listeners.push({
