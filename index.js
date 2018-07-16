@@ -25,7 +25,7 @@ class RNEventSource {
       listener.remove();
     });
   }
-  removeListener(type, listener) {
+  removeEventListener(type, listener) {
     this.eventSource.removeEventListener(type, listener);
   }
   close () {
